@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "pug": "^3.0.3",
+    "pug-cli": "^1.0.0-alpha6"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
