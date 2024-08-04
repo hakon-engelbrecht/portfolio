@@ -1,16 +1,16 @@
 APP_NAME=portfolio
 IMAGE_NAME=${APP_NAME}
 CONTAINER_NAME=${APP_NAME}-container
-PORT=3000
+PORT ?= 4000
 
 # default target: build and run
 .PHONY: all
-all: build run
+all: stop remove-container build run 
 
 # build image
 .PHONY: build
 build:
-	docker build -t ${IMAGE_NAME} .
+	docker build --build-arg PORT=${PORT} -t ${IMAGE_NAME} .
 
 # run container with image
 .PHONY: run

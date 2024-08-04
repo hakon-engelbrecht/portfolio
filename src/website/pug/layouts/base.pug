@@ -1,0 +1,22 @@
+doctype html 
+html(lang="en")
+head 
+    title= "Hakon Engelbrecht"
+
+    script(type="importmap").
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.167.0/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.167.0/examples/jsm/"
+            }
+        }
+    block scripts
+
+    link(rel="stylesheet", href="static/styles/base.css")
+    block styles
+body 
+    include ../includes/header.pug
+    div.spacer
+    block content
+    div.spacer
+    include ../includes/footer.pug
